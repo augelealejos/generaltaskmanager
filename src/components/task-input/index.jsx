@@ -1,8 +1,6 @@
-import { Button, TextInput, View } from "react-native";
+import { Button, TextInput, View } from "react-native";import { styles } from "./styles.js";
 
-import { styles } from "./styles.js";
-
-import { colors } from '../../colors.js';
+import { colors } from "../../colors.js";
 
 const TaskInput = ({
   borderColor,

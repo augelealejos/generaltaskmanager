@@ -1,6 +1,5 @@
 import { StyleSheet, StatusBar } from "react-native";
-
-import { colors } from './colors';
+import { colors } from "./colors";
 
 export const styles = StyleSheet.create({
   safeArea: {

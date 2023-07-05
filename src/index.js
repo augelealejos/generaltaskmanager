@@ -1,10 +1,17 @@
 import React, { useState } from "react";
-import { View, Text, Button, SafeAreaView, FlatList, Modal } from "react-native";
+import {
+  View,
+  Text,
+  Button,
+  SafeAreaView,
+  FlatList,
+  Modal,
+} from "react-native";
 
 import { TaskInput, TaskItem, TaskList, TaskModal } from "./components";
 import { styles } from "./styles.js";
 
-import { colors } from './colors';
+import { colors } from "./colors";
 
 export default function App() {
   const [task, setTask] = useState("");
@@ -37,7 +44,9 @@ export default function App() {
     setTask("");
   };
 
-  const renderItem = ({ item }) => <TaskItem item={item} onPressItem={onHandleModal} />;
+  const renderItem = ({ item }) => (
+    <TaskItem item={item} onPressItem={onHandleModal} />
+  );
 
   const onHandleModal = (item) => {
     setIsVisible(true);
